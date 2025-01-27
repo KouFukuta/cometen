@@ -1,22 +1,394 @@
 @charset "UTF-8";
 
-/* common */
-html
-{
+* {
+    box-sizing: border-box;
+}
+
+/* 書式等 */
+html {
     font-size: 16px;
 }
 
-body
-{
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 1.57rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+}
+
+body {
     max-width: 100vw;
     width: 100%;
+}
 
+li {
+    text-decoration: none;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* reimin */
+.reimin {
+    font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.reiminB {
+    font-family: "a-otf-ud-reimin-pr6n", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Garamond R */
+.garamond {
+    font-family: "garamond-premier-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.garamondB {
+    font-family: "garamond-premier-pro", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: -10;
     overflow: hidden;
 }
 
+.cometenBand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
 
-/* responsive */
-@media (max-width: 768px)
+    width: 100%;
+    height: 20%;
+
+    mix-blend-mode: normal;
+    transition: mix-blend-mode 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+}
+
+.bandMixblend {
+    mix-blend-mode: difference;
+}
+
+.cometenBand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
+.headerWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* スライドショー */
+.headerSlider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slides {
+    width: 100vw;
+    height: 100vh;
+}
+
+.headerSlider img {
+    object-fit: cover;
+}
+
+
+.headerContents {
+    width: 80%;
+    height: 80%;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ナビゲーション */
+nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    background-color: #000;
+    border-radius: calc(75px / 2);
+    cursor: pointer;
+    pointer-events: all;
+
+    width: 75px;
+    height: 75px;
+
+    position: absolute;
+    right: 10%;
+    top: 250px;
+
+    z-index: 20;
+
+}
+
+.hamburgerBar {
+    background-color: #fff;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hamburgerBar:first-child {
+    top: calc((75px / 2) - 13px);
+}
+
+.hamburgerBar:nth-child(2) {
+    top: calc(75px / 2);
+}
+
+.hamburgerBar:last-child {
+    top: calc((75px / 2) + 13px);
+}
+
+.hamburgerBar .hamburgerOpened {
+    top: 50%;
+}
+
+.hamburgerOpened .hamburgerBar:first-child {
+    transform: translateX(-50%) rotate(45deg);
+    top: 50%;
+    transition: transform 0.3s ease;
+}
+
+.hamburgerOpened .hamburgerBar:last-child {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 50%;
+    transition: transform 0.3s ease;
+}
+
+.hamburgerOpened .hamburgerBar:nth-child(2) {
+    opacity: 0;
+}
+
+
+/* ナビゲーション */
+.navigation {
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+
+}
+
+
+.viewNavigation {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+
+.navigationList {
+    width: 80%;
+    height: 50%;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+}
+
+.navigationList ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    list-style: none;
+
+}
+
+.navigationList li {
+    writing-mode: vertical-rl;
+    text-align: start;
+    margin: 0 20px;
+}
+
+.navigationList a {
+    font-size: 24px;
+    display: inline-block;
+
+}
+
+.navigationList a:hover {
+    color: #696969;
+    transition: 0.3s ease;
+}
+
+
+
+/* ロゴ */
+.headerLogo {
+    width: 350px;
+    height: auto;
+
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.headerLogo img {
+    filter: brightness(0) invert(1);
+}
+
+/* キャッチコピー */
+.catchCopy {
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+}
+
+.catchCopy span {
+    color: #fff;
+    font-size: 72px;
+    writing-mode: vertical-rl;
+}
+
+/* main */
+main {
+    background: #fff;
+    z-index: 20;
+    padding: 2rem 0 0 0;
+}
+
+.countainer {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.contents {
+    padding: 0 0 3rem 0;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.newsList {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 2rem;
+    line-height: 2rem;
+    align-items: start;
+}
+
+.textJustify {
+    display: block;
+    text-align: center;
+}
+
+.fontSizeR {
+    font-size: 1rem;
+}
+
+.fontSizeM {
+    font-size: 1.57rem;
+}
+
+/* footer */
+footer {
+    background-color: #fff;
+}
+
+.maps
 {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
 
+.gmapsSizing
+{
+    aspect-ratio: 16 / 5;
+    width: 100%;
+    height: 500px;
+}
+
+.snsList {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.snsList span {
+    display: block;
+    width: 25%;
+    text-align: center;
+}
+
+.copyrBox {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+
+}
+
+.copyright {
+    color: #fff;
+    font-size: 16px;
 }

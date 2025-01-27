@@ -15,30 +15,199 @@
     <!-- JQuery CSS -->
 
     <!-- CSS -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="CSS/common.css">
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <!-- fonts -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'pcj4hha',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 
 
 </head>
-    <header>
 
+<body>
+
+    <header>
+        <div class="cometenBand">
+            <img src="Images/cometen_band.svg" alt="#">
+        </div>
+
+        <!-- スライドショー -->
+        <div class="headerSlider">
+            <img class="slides" src="Images/DSC03972.JPG" alt="#">
+            <img class="slides" src="Images/DSC04012.JPG" alt="#">
+            <!-- <img class="slides" src="" alt=""> -->
+        </div>
+
+        <div class="headerContents">
+            <!-- cometenロゴ, キャッチコピー等 -->
+            <div>
+                <div class="headerLogo">
+                    <img src="Images/cometen_logo.svg" alt="cometen_logo">
+                </div>
+
+                <div class="catchCopy">
+                    <span class="reiminB">米と米の<br>まわりを<br>伝える</span>
+                </div>
+            </div>
+        </div>
 
     </header>
 
+    <nav>
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger">
+            <span class="hamburgerBar"></span>
+            <span class="hamburgerBar"></span>
+            <span class="hamburgerBar"></span>
+        </div>
+
+        <!-- ナビゲーション -->
+        <div class="navigation">
+            <div class="navigationList">
+                <ul>
+                    <li><a class="reimin" href="index.html">ホーム</a></li>
+                    <li><a class="reimin" href="#">オンラインショップ</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
     <main>
-  
-        
+
+        <div class="countainer">
+            <div class="contents">
+                <h2 class="sectionTitle garamondB">NEWS</h2>
+                <dl class="newsList">
+                    <dt class="reimin">2025.2.18 - 3.30</dt>
+                    <dd class="reimin">飛騨古川 POP UP「飛騨の森と米」at cometen国立米店</dd>
+
+                    <dt class="reimin">2025.2.18</dt>
+                    <dd class="reimin">cometen国立米店 オープン</dd>
+                </dl>
+            </div>
+
+            <div class="contents">
+                <h2 class="sectionTitle reiminB">米と米のまわりを伝える活動。</h2>
+                <p class="reimin">日本はぜんぶ米どころ。私たちは日本の大切な風土文化がはぐくむお米を、ただ届けるだけでなく、米のまわりの人や物、土地のストーリーと一緒に届けていきます。</p>
+
+                <p class="garamond">Japan as a whole is a rice-producing country. We supply not only the rice that is
+                    nurtured by Japan's
+                    important climate and culture, but also the stories of the people, things and land that surround it.
+                </p>
+            </div>
+
+            <div class="contents">
+                <h2 class="sectionTitle reiminB"><span class="garamondB">cometen</span> 国立米店</h2>
+                <p class="reimin">
+                    東京・国立市にある、米と米のまわりのライフスタイルを伝えるお店。お米のギフトや量り売り、ごはんを美味しく味わう食や道具、土鍋で炊けるごはんの様子を見ながら味わうことのできるキッチンと、お米の産地やテーマを設けたポップアップや企画を行う大きなテーブルのある店内で、「お米がもっと美味しくなる」体験を伝えます。
+                </p>
+                <p class="garamond">This shop in Kunitachi City, Tokyo, conveys a lifestyle around rice and rice. The
+                    shop conveys the
+                    experience of "rice made more delicious" with rice gifts and rice sold by weight, food and tools for
+                    tasting rice, a kitchen where you can watch and taste rice being cooked in clay pots, and a large
+                    table for pop-ups and projects with rice production areas and themes.</p>
+            </div>
+
+        </div>
     </main>
 
     <footer>
+        <div class="countainer">
+            <div class="contents">
+                <span class="fontSizeM textJustify garamondB">OPEN 11:00-18:00</span>
+                <span class="fontSizeR textJustify reimin">不定休</span>
+                <span class="fontSizeR textJustify garamond">non-scheduled holiday</span>
+                <ul class="textJustify">
+                    <li class="reimin">公式SNSから営業カレンダーをご確認ください。</li>
+                    <li class="reimin">産地への取材や仕入れのため臨時休業となる場合があります。ご了承ください。</li>
+                </ul>
+
+                <span class="fontSizeR textJustify reimin"> 所在地 東京都国立市西2-10-5</span>
+
+                <h3 class="garamondB textJustify">access</h3>
+                <span class="reimin textJustify fontSizeR">JR中央線国立駅から徒歩12分</span>
+                <span class="garamond textJustify fontSizeR">12-minute walk from Kunitachi Station on the JR Chuo
+                    Line.</span>
+            </div>
+        </div>
+
+        <!-- GoogleMaps -->
+        <div class="maps">
+            <iframe class="gmapsSizing"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.6430681146667!2d136.9019963757659!3d35.190447772749714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036d127927b62d%3A0xece8803f84e8dde8!2z5ZCN5Y-k5bGL6YCg5b2i5aSn5a2mIOWQjeWfjuWFrOWckuOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1737721412733!5m2!1sja!2sjp"
+                width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="countainer">
+            <div class="contents snsList">
+                <span class="garamond fontSizeR"><a href="https://www.instagram.com/cometen88/">Instagram</a></span>
+                <span class="garamond fontSizeR"><a href="https://www.facebook.com/cometen88/">Facebook</a></span>
+                <span class="garamond fontSizeR"><a href="https://note.com/cometen">note</a></span>
+                <span class="garamond fontSizeR"><a href="#">X(準備中)</a></span>
+                <span class="garamond fontSizeR"><a href="#">ONLINESHOP(準備中)</a></span>
+            </div>
+        </div>
+        <div class="copyrBox">
+            <span class="garamond copyright textJustify">©cometen 2025</span>
+        </div>
 
 
     </footer>
 
-<body>
+    <script>
+        // slick
+        $(function () {
+            $('.headerSlider').slick({
+                autoplay: true,
+                speed: 2000,
+                dots: false,
+                fade: true,
+            });
+        });
+
+        //hamburger
+        $(function () {
+            $('.hamburger').on('click', function () {
+                const $navigation = $('.navigation');
+                const $cometenBand = $('.cometenBand');
+
+                if ($navigation.hasClass('viewNavigation')) {
+                    // 非表示にする
+                    $navigation.removeClass('viewNavigation');
+                    $cometenBand.removeClass('bandMixblend'); // ブレンドモードを元に戻す
+                    setTimeout(() => $navigation.css('display', 'none'), 500);
+                } else {
+                    // 表示する
+                    $navigation.css('display', 'block');
+                    $cometenBand.addClass('bandMixblend'); // ブレンドモードを適用
+                    setTimeout(() => $navigation.addClass('viewNavigation'), 10);
+                }
+
+                // ハンバーガーメニューの状態を切り替え
+                $('.hamburger').toggleClass('hamburgerOpened');
+            });
+        });
+
+
+    </script>
 
 </body>
 
