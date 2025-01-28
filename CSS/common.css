@@ -143,14 +143,17 @@ header {
 
 
 .headerContents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 80%;
-    height: 80%;
-    overflow: visible !important;
+    height: 100%;
 
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
+    overflow: visible !important;
 }
 
 /* ナビゲーション */
@@ -296,10 +299,7 @@ nav {
 .headerLogo {
     width: 350px;
     height: auto;
-
-    position: absolute;
-    bottom: 3%;
-    left: -5%;
+    margin-top: 50%;
 }
 
 .headerLogo img {
@@ -308,11 +308,11 @@ nav {
 
 /* キャッチコピー */
 .catchCopy {
-    position: relative;
-    top: 40%;
-    left: 100%;
-    transform: translateX(-50%);
     max-width: 70%;
+    word-break: break-word;
+    overflow: hidden;
+    margin-top: 25%;
+    /* 必要に応じてpaddingを調整 */
 
 }
 
@@ -500,36 +500,24 @@ footer {
     }
 
     .headerContents {
-        width: 80%;
-        overflow: visible !important;
+        width: 90%;
+        height: 100%;
     }
 
     .headerLogo {
-        width: 250px;
+        width: 200px;
         height: auto;
 
-        bottom: 20px;
-        left: -45px;
+        margin-top: 150%;
     }
 
     .catchCopy {
-        width: auto;
-        height: auto;
-
-        top: 50%;
-        left: 60%;
-        
-
-        max-width: 70%;
-        word-break: break-word;
-        overflow: hidden;
+        margin-top: 100%;
     }
 
     .catchCopy span {
         font-size: 3rem;
         line-height: 4rem;
-        writing-mode: vertical-rl;
-        white-space: nowrap;
     }
 
     .hamburger {
