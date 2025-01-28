@@ -502,12 +502,12 @@ footer {
 
     .catchCopy {
         bottom: 25%;
-        right: 70%;
-        max-width: 90%;
+        right: 3%;
+        max-width: 85%;
     }
 
     .catchCopy span {
-        font-size: 48px;
+        font-size: 3rem;
         writing-mode: vertical-rl;
     }
 
