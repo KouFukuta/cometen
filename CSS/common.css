@@ -5,6 +5,12 @@
 
 }
 
+html,
+body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 /* 書式等 */
 html {
     font-size: 16px;
@@ -503,6 +509,7 @@ footer {
     }
 
     .catchCopy {
+        overflow: visible;
         width: auto;
         height: auto;
 
