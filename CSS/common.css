@@ -515,11 +515,12 @@ footer {
         height: auto;
 
         bottom: 150px;
-        right: 5%;
+        right: 0;
         left: auto;
 
-        max-width: 90%;
+        max-width: 70%;
         word-break: break-word;
+        overflow: hidden;
     }
 
     .catchCopy span {
