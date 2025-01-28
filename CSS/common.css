@@ -503,7 +503,7 @@ footer {
     .catchCopy {
         bottom: 15%;
         right: 5%;
-        transform: none;
+        transform: translateX(100%);
     }
 
     .catchCopy span {
