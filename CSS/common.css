@@ -501,10 +501,11 @@ footer {
     }
 
     .catchCopy {
-        position: absolute;
-        bottom: 20vh;
-        right: 1vw;
         width: fit-content;
+        height: auto;
+        
+        bottom: 50px;
+        right: 0px;
     }
 
     .catchCopy span {
