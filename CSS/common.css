@@ -489,7 +489,7 @@ footer {
     }
 
     .headerContents {
-        width: 90%;
+        width: 80%;
     }
 
     .headerLogo {
@@ -501,16 +501,19 @@ footer {
     }
 
     .catchCopy {
-        width: fit-content;
+        width: auto;
         height: auto;
-        
+
         bottom: 50px;
-        right: 0px;
+        right: 5px;
+
+        max-width: 90%;
     }
 
     .catchCopy span {
         font-size: 3rem;
         writing-mode: vertical-rl;
+        white-space: nowrap;
     }
 
     .hamburger {
