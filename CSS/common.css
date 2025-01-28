@@ -303,8 +303,7 @@ nav {
 .catchCopy {
     position: absolute;
     bottom: 25%;
-    left: 100%;
-    transform: translateX(-100%);
+    right: 0%;
 
 }
 
@@ -504,7 +503,6 @@ footer {
     .catchCopy {
         bottom: 15%;
         right: 5%;
-        left: auto;
         transform: none;
     }
 
