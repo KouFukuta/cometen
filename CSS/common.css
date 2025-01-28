@@ -17,6 +17,10 @@ h2 {
     font-size: 1.57rem;
 }
 
+h3 {
+    font-size: 1.3rem;
+}
+
 p {
     font-size: 1rem;
     line-height: 2rem;
@@ -149,7 +153,7 @@ nav {
 /* ハンバーガーメニュー */
 .hamburger {
     background-color: #000;
-    border-radius: calc(75px / 2);
+    border-radius: calc(100% / 2);
     cursor: pointer;
     pointer-events: all;
 
@@ -158,7 +162,7 @@ nav {
 
     position: absolute;
     right: 10%;
-    top: 250px;
+    top: 25%;
 
     z-index: 20;
 
@@ -176,15 +180,15 @@ nav {
 }
 
 .hamburgerBar:first-child {
-    top: calc((75px / 2) - 13px);
+    top: calc((100% / 2) - 13px);
 }
 
 .hamburgerBar:nth-child(2) {
-    top: calc(75px / 2);
+    top: calc(100% / 2);
 }
 
 .hamburgerBar:last-child {
-    top: calc((75px / 2) + 13px);
+    top: calc((100% / 2) + 13px);
 }
 
 .hamburgerBar .hamburgerOpened {
@@ -238,7 +242,7 @@ nav {
     height: 50%;
 
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -261,7 +265,7 @@ nav {
 }
 
 .navigationList a {
-    font-size: 24px;
+    font-size: 1.5rem;
     display: inline-block;
 
 }
@@ -279,8 +283,8 @@ nav {
     height: auto;
 
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    bottom: 3%;
+    left: -5%;
 }
 
 .headerLogo img {
@@ -290,7 +294,7 @@ nav {
 /* キャッチコピー */
 .catchCopy {
     position: absolute;
-    bottom: 200px;
+    bottom: 25%;
     right: 0;
 }
 
@@ -307,6 +311,46 @@ main {
     padding: 2rem 0 0 0;
 }
 
+/* スクロールで表示 */
+
+.fadeUp {
+    -webkit-animation-name: fadeUpAnime;
+            animation-name: fadeUpAnime; /*アニメーションの名前*/
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; /*アニメーションの実行時間*/
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; /*アニメーション後、要素が表示されたままにする*/
+  }
+  @-webkit-keyframes fadeUpAnime {
+    0% {
+      opacity: 0; /*非表示*/
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px); /*縦方向に100pxずらす*/
+    }
+    100% {
+      opacity: 1; /*表示*/
+      -webkit-transform: translateY(0);
+              transform: translateY(0); /*元の位置*/
+    }
+  }
+  @keyframes fadeUpAnime {
+    0% {
+      opacity: 0; /*非表示*/
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px); /*縦方向に100pxずらす*/
+    }
+    100% {
+      opacity: 1; /*表示*/
+      -webkit-transform: translateY(0);
+              transform: translateY(0); /*元の位置*/
+    }
+  }
+  .fadeUpTrigger {
+    opacity: 0; /*非表示*/
+  }
+
+
+
 .countainer {
     width: 50%;
     margin: 0 auto;
@@ -314,7 +358,7 @@ main {
 }
 
 .contents {
-    padding: 0 0 3rem 0;
+    padding-bottom: 3rem;
 }
 
 .sectionTitle {
@@ -336,28 +380,42 @@ main {
 }
 
 .fontSizeR {
+    display: block;
     font-size: 1rem;
+
 }
 
 .fontSizeM {
+    display: block;
     font-size: 1.57rem;
+    line-height: 3rem;
+
 }
 
 /* footer */
 footer {
     background-color: #fff;
+    line-height: 2rem;
 }
 
-.maps
-{
+.ulJustify {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.address {
+    font-size: 1.3rem;
+    line-height: 4rem;
+}
+
+.maps {
     width: 100%;
     height: 500px;
     object-fit: cover;
     margin-bottom: 2rem;
 }
 
-.gmapsSizing
-{
+.gmapsSizing {
     aspect-ratio: 16 / 5;
     width: 100%;
     height: 500px;
@@ -389,6 +447,49 @@ footer {
 }
 
 .copyright {
+    display: block;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .headerContents {
+        width: 90%;
+    }
+
+    .headerLogo {
+        width: 250px;
+        height: auto;
+
+        bottom: 20px;
+        left: -45px;
+    }
+
+    .catchCopy {
+        bottom: 200px;
+        right: 0;
+    }
+
+    .catchCopy span {
+        font-size: 48px;
+    }
+
+    .hamburger {
+        top: 22%;
+
+        width: 65px;
+        height: 65px;
+
+    }
+
+    .countainer {
+        width: 85%;
+
+    }
 }

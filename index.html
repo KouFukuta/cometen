@@ -92,7 +92,7 @@
     <main>
 
         <div class="countainer">
-            <div class="contents">
+            <div class="contents fadeUpTrigger">
                 <h2 class="sectionTitle garamondB">NEWS</h2>
                 <dl class="newsList">
                     <dt class="reimin">2025.2.18 - 3.30</dt>
@@ -103,7 +103,7 @@
                 </dl>
             </div>
 
-            <div class="contents">
+            <div class="contents fadeUpTrigger">
                 <h2 class="sectionTitle reiminB">米と米のまわりを伝える活動。</h2>
                 <p class="reimin">日本はぜんぶ米どころ。私たちは日本の大切な風土文化がはぐくむお米を、ただ届けるだけでなく、米のまわりの人や物、土地のストーリーと一緒に届けていきます。</p>
 
@@ -113,7 +113,7 @@
                 </p>
             </div>
 
-            <div class="contents">
+            <div class="contents fadeUpTrigger">
                 <h2 class="sectionTitle reiminB"><span class="garamondB">cometen</span> 国立米店</h2>
                 <p class="reimin">
                     東京・国立市にある、米と米のまわりのライフスタイルを伝えるお店。お米のギフトや量り売り、ごはんを美味しく味わう食や道具、土鍋で炊けるごはんの様子を見ながら味わうことのできるキッチンと、お米の産地やテーマを設けたポップアップや企画を行う大きなテーブルのある店内で、「お米がもっと美味しくなる」体験を伝えます。
@@ -130,16 +130,17 @@
 
     <footer>
         <div class="countainer">
-            <div class="contents">
+            <div class="contents fadeUpTrigger">
                 <span class="fontSizeM textJustify garamondB">OPEN 11:00-18:00</span>
-                <span class="fontSizeR textJustify reimin">不定休</span>
-                <span class="fontSizeR textJustify garamond">non-scheduled holiday</span>
+                <span class="fontSizeM textJustify reimin">不定休</span>
+                <span class="fontSizeM textJustify garamond">non-scheduled holiday</span>
+
                 <ul class="textJustify">
-                    <li class="reimin">公式SNSから営業カレンダーをご確認ください。</li>
-                    <li class="reimin">産地への取材や仕入れのため臨時休業となる場合があります。ご了承ください。</li>
+                    <li class="reimin ulJustify">公式SNSから営業カレンダーをご確認ください。</li>
+                    <li class="reimin ulJustify">産地への取材や仕入れのため臨時休業となる場合があります。ご了承ください。</li>
                 </ul>
 
-                <span class="fontSizeR textJustify reimin"> 所在地 東京都国立市西2-10-5</span>
+                <span class="address textJustify reimin"> 所在地 東京都国立市西2-10-5</span>
 
                 <h3 class="garamondB textJustify">access</h3>
                 <span class="reimin textJustify fontSizeR">JR中央線国立駅から徒歩12分</span>
@@ -149,14 +150,14 @@
         </div>
 
         <!-- GoogleMaps -->
-        <div class="maps">
+        <div class="maps fadeUpTrigger">
             <iframe class="gmapsSizing"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.6430681146667!2d136.9019963757659!3d35.190447772749714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60036d127927b62d%3A0xece8803f84e8dde8!2z5ZCN5Y-k5bGL6YCg5b2i5aSn5a2mIOWQjeWfjuWFrOWckuOCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1737721412733!5m2!1sja!2sjp"
                 width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="countainer">
+        <div class="countainer fadeUpTrigger">
             <div class="contents snsList">
                 <span class="garamond fontSizeR"><a href="https://www.instagram.com/cometen88/">Instagram</a></span>
                 <span class="garamond fontSizeR"><a href="https://www.facebook.com/cometen88/">Facebook</a></span>
@@ -207,6 +208,30 @@
         });
 
 
+        $(function () {
+            $(window).scroll(function () {
+                fadeAnime();
+            });
+
+            // フェードアニメーションの設定
+            function fadeAnime() {
+                // .fadeUpTriggerが付いた要素に対して
+                $('.fadeUpTrigger').each(function () {
+                    // 縦位置を取得し-50pxして、変数targetに代入する
+                    let target = $(this).offset().top -= 50;
+                    // スクロール量を取得し、変数scrollに代入する
+                    let scroll = $(window).scrollTop();
+                    // 表示画面の高さを取得し、変数windowHeightに代入する
+                    let windowHeight = $(window).height();
+
+                    // 要素の縦位置から表示画面の高さ+200pxを引いた数字よりscrollのほうが大きい場合
+                    if (scroll > target - windowHeight + 200) {
+                        // .fadeUpを追加する
+                        $(this).addClass('fadeUp');
+                    } 
+                });
+            };
+        });
     </script>
 
 </body>
