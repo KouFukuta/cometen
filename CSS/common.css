@@ -308,9 +308,11 @@ nav {
 
 /* キャッチコピー */
 .catchCopy {
-    position: absolute;
-    bottom: 25%;
-    right: 0%;
+    position: relative;
+    top: 40%;
+    left: 100%;
+    transform: translateX(-50%);
+    max-width: 70%;
 
 }
 
@@ -514,9 +516,9 @@ footer {
         width: auto;
         height: auto;
 
-        bottom: 150px;
-        right: 0;
-        left: auto;
+        top: 50%;
+        left: 60%;
+        
 
         max-width: 70%;
         word-break: break-word;
