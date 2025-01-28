@@ -502,12 +502,15 @@ footer {
     }
 
     .catchCopy {
-        bottom: 200px;
-        right: 0;
+        bottom: 15%;
+        right: 5%;
+        left: auto;
+        transform: none;
     }
 
     .catchCopy span {
         font-size: 48px;
+        writing-mode: vertical-rl;
     }
 
     .hamburger {
