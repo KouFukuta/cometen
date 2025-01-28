@@ -504,14 +504,15 @@ footer {
         width: auto;
         height: auto;
 
-        bottom: 50px;
-        right: 5px;
+        bottom: 150px;
+        right: 0px;
 
         max-width: 90%;
     }
 
     .catchCopy span {
         font-size: 3rem;
+        line-height: 4rem;
         writing-mode: vertical-rl;
         white-space: nowrap;
     }
