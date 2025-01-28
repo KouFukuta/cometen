@@ -142,7 +142,7 @@ header {
 
 
 .headerContents {
-    width: 1000px;
+    width: 100%;
     height: 80%;
 
     position: absolute;
@@ -308,7 +308,7 @@ nav {
 .catchCopy {
     position: absolute;
     bottom: 25%;
-    right: 0%;
+    right: 0;
 }
 
 .catchCopy span {
