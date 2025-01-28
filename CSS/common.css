@@ -501,9 +501,9 @@ footer {
     }
 
     .catchCopy {
-        /* bottom: 15%; */
-        right: 0%;
-        z-index: 10;
+        bottom: 25%;
+        right: 5%;
+        max-width: 90%;
     }
 
     .catchCopy span {
