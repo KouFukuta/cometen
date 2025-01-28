@@ -498,6 +498,7 @@ footer {
 
     .headerContents {
         width: 80%;
+        overflow: visible !important;
     }
 
     .headerLogo {
