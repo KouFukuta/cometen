@@ -502,8 +502,8 @@ footer {
 
     .catchCopy {
         bottom: 15%;
-        right: 5%;
-        transform: translateX(100%);
+        right: 0%;
+        transform: translateX(-100%);
     }
 
     .catchCopy span {
