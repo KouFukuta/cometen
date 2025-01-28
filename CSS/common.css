@@ -145,6 +145,7 @@ header {
 .headerContents {
     width: 80%;
     height: 80%;
+    overflow: visible !important;
 
     position: absolute;
     bottom: 0;
@@ -510,14 +511,15 @@ footer {
     }
 
     .catchCopy {
-        overflow: visible;
         width: auto;
         height: auto;
 
         bottom: 150px;
-        right: 0px;
+        right: 5%;
+        left: auto;
 
         max-width: 90%;
+        word-break: break-word;
     }
 
     .catchCopy span {
