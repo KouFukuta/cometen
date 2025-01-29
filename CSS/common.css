@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 html,
@@ -89,39 +88,20 @@ a {
 
 /* ヘッダー */
 header {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     position: sticky;
     top: 0;
-    z-index: -10;
-    overflow: hidden;
-}
-
-.cometenBand {
-    position: absolute;
-    top: 0;
     left: 0;
-    z-index: 20;
 
-    width: 100%;
-    height: 20%;
+    overflow: hidden;
+    z-index: -10;
 
-    mix-blend-mode: normal;
-    transition: mix-blend-mode 0.5s ease, opacity 0.5s ease;
-    opacity: 1;
-}
-
-.bandMixblend {
-    mix-blend-mode: difference;
-}
-
-.cometenBand img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 
@@ -130,30 +110,15 @@ header {
     width: 100vw;
     height: 100vh;
     position: relative;
+    top: 0;
+    left: 0;
+    z-index: -30;
 }
 
 .slides {
     width: 100vw;
     height: 100vh;
-}
-
-.headerSlider img {
     object-fit: cover;
-}
-
-
-.headerContents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: visible !important;
 }
 
 /* ナビゲーション */
@@ -293,13 +258,56 @@ nav {
     transition: 0.3s ease;
 }
 
+/* ヘッダーコンテンツ */
 
+.headerContents {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 0;
+}
+
+.cometenBand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    width: 100%;
+    height: 20%;
+
+    mix-blend-mode: normal;
+    transition: mix-blend-mode 0.5s ease, opacity 0.5s ease;
+    opacity: 1;
+}
+
+.bandMixblend {
+    mix-blend-mode: difference;
+}
+
+.cometenBand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+
+}
 
 /* ロゴ */
 .headerLogo {
     width: 350px;
-    height: auto;
-    margin-top: 50%;
+    height: fit-content;
+    
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 7;
 }
 
 .headerLogo img {
@@ -308,11 +316,12 @@ nav {
 
 /* キャッチコピー */
 .catchCopy {
-    max-width: 70%;
-    word-break: break-word;
-    overflow: hidden;
-    margin-top: 25%;
-    /* 必要に応じてpaddingを調整 */
+    width: fit-content;
+    height: fit-content;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 8;
+    grid-row-start: 6;
 
 }
 
@@ -500,7 +509,7 @@ footer {
     }
 
     .headerContents {
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
 
