@@ -266,11 +266,6 @@ nav {
 
     position: absolute;
     top: 0;
-
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    gap: 0;
 }
 
 .cometenBand {
@@ -304,10 +299,9 @@ nav {
     width: 350px;
     height: fit-content;
     
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 2;
-    grid-row-start: 7;
+    position: absolute;
+    left: 2.5%;
+    bottom: 10%;
 }
 
 .headerLogo img {
@@ -318,10 +312,10 @@ nav {
 .catchCopy {
     width: fit-content;
     height: fit-content;
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-    grid-column-start: 8;
-    grid-row-start: 6;
+    
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
 
 }
 
