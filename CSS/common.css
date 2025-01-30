@@ -314,6 +314,7 @@ nav {
     width: fit-content;
     height: fit-content;
     
+    display: block;
     position: absolute;
     right: 10%;
     bottom: 20%;
