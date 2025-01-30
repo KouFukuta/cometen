@@ -88,8 +88,8 @@ a {
 
 /* ヘッダー */
 header {
-    width: 100dvw;
-    height: 100dvh;
+    width: 100svw;
+    height: 100svh;
 
     position: sticky;
     top: 0;
@@ -509,8 +509,8 @@ footer {
     }
 
     .headerContents {
-        width: 100dvw;
-        height: 100dvh;
+        width: 100svw;
+        height: 100svh;
     }
 
     .headerRelative {
