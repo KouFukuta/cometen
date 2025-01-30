@@ -499,8 +499,7 @@ footer {
 }
 
 /* スマートフォン用 */
-@media screen and (max-width: 768px),
-(max-height: 500px) {
+@media screen and (max-width: 820px), (max-height: 600px) {
     html {
         font-size: 14px;
     }
