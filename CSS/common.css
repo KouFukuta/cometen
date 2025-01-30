@@ -323,7 +323,9 @@ nav {
 .catchCopy span {
     color: #fff;
     font-size: 72px;
-    line-height: 6.5rem;
+
+    line-height: 7rem;
+    letter-spacing: 1rem;
 
     writing-mode: vertical-rl;
 }
