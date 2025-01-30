@@ -302,6 +302,7 @@ nav {
     position: absolute;
     left: 5%;
     bottom: 5%;
+    -webkit-appearance: none;
 }
 
 .headerLogo img {
@@ -316,8 +317,10 @@ nav {
     position: absolute;
     right: 10%;
     bottom: 20%;
-
+    -webkit-appearance: none;
 }
+
+-webkit
 
 .catchCopy span {
     color: #fff;
