@@ -512,11 +512,13 @@ footer {
         width: 200px;
         height: auto;
 
-        margin-top: 150%;
+        bottom: 5%;
+        left: 5%;
     }
 
     .catchCopy {
-        margin-top: 100%;
+        bottom: 20%;
+        right: 10%;
     }
 
     .catchCopy span {
