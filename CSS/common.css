@@ -280,7 +280,6 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 20;
 
     width: 100%;
     height: 20%;
@@ -288,16 +287,13 @@ nav {
     mix-blend-mode: normal;
     transition: mix-blend-mode 0.5s ease, opacity 0.5s ease;
     opacity: 1;
+    
+    object-fit: cover;
+    object-position: bottom;
 }
 
 .bandMixblend {
     mix-blend-mode: difference;
-}
-
-.cometenBand img {
-    object-fit: cover;
-    object-position: bottom;
-
 }
 
 /* ロゴ */
@@ -503,14 +499,22 @@ footer {
 }
 
 @media screen and (max-width: 768px), (max-height: 500px) {
+   
 
     html {
         font-size: 14px;
     }
+    
 
     .headerContents {
         width: 100svw;
         height: 100svh;
+    }
+
+    .cometenBand
+    {
+        width: 100%;
+        height: 15%;
     }
 
     .headerRelative {
@@ -529,7 +533,7 @@ footer {
     .catchCopy {
         display: block;
         position: absolute;
-        bottom: 5%;
+        bottom: 3%;
         right: 0;
 
 
@@ -538,7 +542,7 @@ footer {
     }
 
     .hamburger {
-        top: 25%;
+        top: 20%;
         right: 2.5%;
 
         width: 65px;
@@ -552,9 +556,8 @@ footer {
 
 }
 
-
 @media screen and (max-height: 500px) {
     .headerRelative {
-        width: 75%;
+        width: 80%;
     }
 }
