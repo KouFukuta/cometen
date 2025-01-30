@@ -515,6 +515,10 @@ footer {
     {
         width: 100%;
         height: 15%;
+
+        object-fit: cover;
+        object-position: bottom;
+
     }
 
     .headerRelative {
@@ -559,5 +563,9 @@ footer {
 @media screen and (max-height: 500px) {
     .headerRelative {
         width: 80%;
+    }
+
+    .catchCopy {
+        bottom: 0;
     }
 }
