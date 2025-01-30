@@ -314,10 +314,9 @@ nav {
     width: fit-content;
     height: fit-content;
     
-    display: block;
     position: absolute;
     right: 10%;
-    bottom: 20%;
+    bottom: 15%;
 
 }
 
@@ -509,8 +508,8 @@ footer {
     }
 
     .headerContents {
-        width: 100vw;
-        height: 100vh;
+        width: 100svw;
+        height: 100svh;
     }
 
     .headerLogo {
@@ -518,21 +517,23 @@ footer {
         height: auto;
 
         bottom: 5%;
-        left: 5%;
+        left: 1%
     }
 
     .catchCopy {
-        bottom: 20%;
-        right: 10%;
+        bottom: 21%;
+        right: 5%;
     }
 
     .catchCopy span {
+        display: block;
         font-size: 3rem;
         line-height: 4rem;
     }
 
     .hamburger {
-        top: 22%;
+        top: 25%;
+        right: 5%;
 
         width: 65px;
         height: 65px;
