@@ -500,8 +500,6 @@ footer {
 
 /* スマートフォン用 */
 @media screen and (max-width: 600px), (max-height: 600px) {
-   
-
     html {
         font-size: 14px;
     }
@@ -562,12 +560,14 @@ footer {
 }
 
 /* スマホ横画面用 */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 600px) {
     .headerRelative {
         width: 75%;
     }
 
     .catchCopy {
         bottom: 0;
+        font-size: 2rem;
+        line-height: 3rem;
     }
 }
