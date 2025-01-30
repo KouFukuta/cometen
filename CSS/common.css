@@ -499,7 +499,7 @@ footer {
 }
 
 /* スマートフォン用 */
-@media screen and (max-width: 600px), (max-height: 500px) {
+@media screen and (max-width: 600px), (max-height: 600px) {
    
 
     html {
@@ -562,7 +562,7 @@ footer {
 }
 
 /* スマホ横画面用 */
-@media screen and (max-height: 500px), (max-height: 834px) {
+@media screen and (max-height: 500px) {
     .headerRelative {
         width: 75%;
     }
