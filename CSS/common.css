@@ -584,3 +584,16 @@ footer {
         line-height: 3.5rem;
     }
 }
+
+/* 細い画面のスマホ用(横画面) */
+@media screen and (max-height: 480px) and (min-aspect-ratio: 2/1) {
+    .headerRelative {
+        width: 75%;
+    }
+
+    .catchCopy {
+        bottom: 0;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
