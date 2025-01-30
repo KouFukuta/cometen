@@ -320,6 +320,16 @@ nav {
 
 }
 
+_::-webkit-full-page-media, _:future, :root
+.catchCopy {
+    width: fit-content;
+    height: fit-content;
+    
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+}
+
 .catchCopy span {
     color: #fff;
     font-size: 72px;
