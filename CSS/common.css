@@ -311,8 +311,8 @@ nav {
 /* キャッチコピー */
 .catchCopy {
     display: block;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
 
     position: absolute;
     right: 0%;
