@@ -8,6 +8,8 @@ html,
 body {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* 書式等 */
@@ -34,8 +36,7 @@ p {
 }
 
 body {
-    max-width: 100vw;
-    width: 100%;
+    width: 100vw;
 
     animation: loading 2s;
 }
@@ -108,7 +109,7 @@ header {
 /* スライドショー */
 .headerSlider {
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     position: relative;
     top: 0;
     left: 0;
