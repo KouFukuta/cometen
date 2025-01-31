@@ -261,11 +261,13 @@ nav {
 /* ヘッダーコンテンツ */
 
 .headerContents {
-    width: 100%;
+    width: auto;
     height: 100%;
 
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
 }
 
 .headerRelative {
@@ -515,7 +517,7 @@ footer {
 
 
     .headerContents {
-        width: 100vw;
+        width: auto;
         height: 100svh;
     }
 
@@ -576,7 +578,7 @@ footer {
     }
 
     .headerContents {
-        width: 100vw;
+        width: auto;
         height: 100svh;
     }
 
@@ -605,7 +607,7 @@ footer {
     }
 
     .headerContents {
-        width: 100vw;
+        width: auto;
         height: 100svh;
     }
 
@@ -635,7 +637,7 @@ footer {
     }
 
     .headerContents {
-        width: 100vw;
+        width: auto;
         height: 100svh;
     }
 
@@ -664,7 +666,7 @@ footer {
     }
 
     .headerContents {
-        width: 100vw;
+        width: auto;
         height: 100svh;
     }
 
