@@ -331,6 +331,7 @@ nav {
 
 /* main */
 main {
+    width: 100%;
     background: #fff;
     z-index: 20;
     padding: 2rem 0 0 0;
@@ -436,6 +437,7 @@ main {
 
 /* footer */
 footer {
+    width: 100%;
     background-color: #fff;
     line-height: 2rem;
 }
