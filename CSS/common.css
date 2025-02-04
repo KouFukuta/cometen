@@ -596,6 +596,12 @@ footer {
         font-size: 2rem;
         line-height: 3rem;
     }
+
+    .smartSlider {
+        object-fit: cover;
+        object-position: 35% center;
+    }
+
 }
 
 /* タブレット横向き */
