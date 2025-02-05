@@ -503,7 +503,7 @@ footer {
 }
 
 /* スマートフォン用 */
-@media screen and (max-width: 850px),
+@media screen and (max-width: 1024px),
 (max-height: 600px) {
     html {
         font-size: 14px;
