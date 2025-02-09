@@ -245,7 +245,7 @@ nav {
 .navigationList li {
     writing-mode: vertical-rl;
     text-align: start;
-    margin: 0 20px;
+    margin: 0 1.25rem;
 }
 
 .navigationList a {
