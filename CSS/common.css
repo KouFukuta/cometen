@@ -571,6 +571,10 @@ footer {
         object-position: 30% bottom;
     }
 
+    .navigationList li {
+        margin: 0 1rem;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -674,6 +678,10 @@ footer {
         object-fit: cover;
         object-position: 35% bottom;
     }
+
+    .navigationList li {
+        margin: 0 1rem;
+    }
 }
 
 /* 細い画面のスマホ用(横画面) */
@@ -697,5 +705,9 @@ footer {
         bottom: 0;
         font-size: 2rem;
         line-height: 3rem;
+    }
+
+    .navigationList li {
+        margin: 0 1rem;
     }
 }
