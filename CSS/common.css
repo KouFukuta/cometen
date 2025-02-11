@@ -15,6 +15,7 @@ body {
 /* 書式等 */
 html {
     font-size: 16px;
+    color: #231815;
 }
 
 h1 {
@@ -86,40 +87,42 @@ a {
     font-style: normal;
 }
 
-/* ヘッダー */
-header {
-    width: 100svw;
-    height: 100svh;
-
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    overflow: hidden;
-    z-index: -10;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-/* スライドショー */
-.headerSlider {
-    width: 100vw;
-    height: 100svh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -30;
-}
-
-.slides {
-    width: 100vw;
+/* .header {
+    width: 100%;
     height: 100vh;
-    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+} */
+
+.pagesHeader {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+
 }
+
+.cometenBandHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 15%;
+
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+.headerTitle {
+    font-size: 3.6rem;
+
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* ナビゲーション */
 nav {
@@ -135,7 +138,7 @@ nav {
 
 /* ハンバーガーメニュー */
 .hamburger {
-    background-color: #000;
+    background-color: #231815;
     border-radius: calc(100% / 2);
     cursor: pointer;
     pointer-events: all;
@@ -202,7 +205,7 @@ nav {
 
     transform: translateY(-100%);
     transition: opacity 0.5s ease, transform 0.5s ease;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 
     position: absolute;
     top: 0;
@@ -225,11 +228,9 @@ nav {
     height: 100%;
 
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
-
-
 
 }
 
@@ -257,76 +258,44 @@ nav {
     transition: 0.3s ease;
 }
 
-/* ヘッダーコンテンツ */
-
-.headerContents {
-    width: auto;
-    height: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.headerRelative {
-    width: 80%;
-    height: 100%;
-    position: relative;
-
-    margin: 0 auto;
-}
-
-.cometenBand {
-    position: absolute;
-    top: 0;
-    left: 0;
-
+.companyAbout {
     width: 100%;
-    height: 20%;
-
-    mix-blend-mode: normal;
-    transition: mix-blend-mode 0.5s ease, opacity 0.5s ease;
-    opacity: 1;
-
-    object-fit: cover;
-    object-position: bottom;
-}
-
-.bandMixblend {
-    mix-blend-mode: difference;
-}
-
-/* ロゴ */
-.headerLogo {
-    width: 350px;
-    height: 350px;
-
-    position: absolute;
-    left: -6.5%;
-    bottom: 0;
-
-    filter: brightness(0) invert(1);
-}
-
-/* キャッチコピー */
-.catchCopy {
-    display: block;
-    width: auto;
     height: auto;
 
     position: absolute;
-    right: 0%;
-    bottom: 125px;
+    bottom: 2.5%;
 
-    color: #fff;
-    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    line-height: 6rem;
-    letter-spacing: 1rem;
+.aboutContents {
+    margin: 0 1rem;
+}
 
-    writing-mode: vertical-rl;
+.aboutH3
+{
+    font-size: 1rem;
+}
 
+.companyAbout span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.companyAbout ul {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.worksList
+{
+    display: flex;
+}
+
+.aboutList {
+    margin: 0 1rem;
 }
 
 
@@ -393,8 +362,6 @@ main {
     /*非表示*/
 }
 
-
-
 .countainer {
     width: 50%;
     margin: 0 auto;
@@ -408,14 +375,6 @@ main {
 .sectionTitle {
     text-align: center;
     margin-bottom: 2rem;
-}
-
-.newsList {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0 2rem;
-    line-height: 2rem;
-    align-items: start;
 }
 
 .textJustify {
@@ -434,6 +393,10 @@ main {
     font-size: 1.57rem;
     line-height: 3rem;
 
+}
+
+.marginBottom {
+    margin-bottom: 2rem;
 }
 
 /* footer */
@@ -490,7 +453,7 @@ footer {
 .copyrBox {
     width: 100%;
     height: 100px;
-    background-color: #000;
+    background-color: #231815;
 
 }
 
@@ -513,46 +476,7 @@ footer {
         width: 100%;
 
     }
-
-
-    .headerContents {
-        width: auto;
-        height: 100svh;
-    }
-
-    .cometenBand {
-        width: 100%;
-        height: 15%;
-
-        object-fit: cover;
-        object-position: bottom;
-
-    }
-
-    .headerRelative {
-        width: 90%;
-        height: 100%;
-    }
-
-    .headerLogo {
-        width: 200px;
-        height: 200px;
-
-        bottom: 0;
-        left: -6%
-    }
-
-    .catchCopy {
-        display: block;
-        position: absolute;
-        bottom: 3%;
-        right: 0;
-
-
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-    }
-
+    
     .hamburger {
         top: 20%;
         right: 2.5%;
@@ -566,22 +490,14 @@ footer {
         width: 85%;
     }
 
-    .smartSlider {
-        object-fit: cover;
-        object-position: 30% bottom;
-    }
-
     .navigationList li {
         margin: 0 0.8rem;
     }
-    
-}
 
-@media screen and (max-width: 768px) {
-    .smartSliderLeft {
-        object-fit: none;
-        object-position: 30% 0%;
+    .headerTitle {
+        font-size: 2.5rem;
     }
+    
 }
 
 /* スマホ横画面用 */
@@ -591,28 +507,6 @@ footer {
         width: 100%;
 
     }
-
-    .headerContents {
-        width: auto;
-        height: 100svh;
-    }
-
-    .headerRelative {
-        width: 75%;
-    }
-
-    .headerLogo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .catchCopy {
-        bottom: 0;
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-
 
 }
 
@@ -624,26 +518,6 @@ footer {
 
     }
 
-    .headerContents {
-        width: auto;
-        height: 100svh;
-    }
-
-    .headerRelative {
-        width: 75%;
-    }
-
-    .headerLogo {
-        width: 225px;
-        height: 225px;
-    }
-
-    .catchCopy {
-        bottom: 15%;
-
-        font-size: 2.5rem;
-        line-height: 3.75rem;
-    }
 }
 
 /* 細い画面のスマホ用(縦画面) */
@@ -652,31 +526,6 @@ footer {
         max-width: 100vw;
         width: 100%;
 
-    }
-
-    .headerContents {
-        width: auto;
-        height: 100svh;
-    }
-
-    .headerLogo {
-        width: 150px;
-        height: auto;
-    }
-
-    .headerRelative {
-        width: 90%;
-    }
-
-    .catchCopy {
-        bottom: 3%;
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-    }
-
-    .smartSliderLeft {
-        object-fit: cover;
-        object-position: 35% bottom;
     }
 
     .navigationList li {
@@ -690,21 +539,6 @@ footer {
         max-width: 100vw;
         width: 100%;
 
-    }
-
-    .headerContents {
-        width: auto;
-        height: 100svh;
-    }
-
-    .headerRelative {
-        width: 75%;
-    }
-
-    .catchCopy {
-        bottom: 0;
-        font-size: 2rem;
-        line-height: 3rem;
     }
 
     .navigationList li {

@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+/* index.html */
+
+/* ヘッダー */
+.indexHeader {
+    width: 100svw;
+    height: 100svh;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    z-index: -10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* スライドショー */
+.headerSlider {
+    width: 100vw;
+    height: 100svh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -30;
+}
+
+.slides {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* ヘッダーコンテンツ */
+
+.headerContents {
+    width: auto;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.headerRelative {
+    width: 80%;
+    height: 100%;
+    position: relative;
+
+    margin: 0 auto;
+}
+
+.cometenBand {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 20%;
+
+    mix-blend-mode: normal;
+    filter: invert(100%) brightness(100%);
+    opacity: 1;
+
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.bandMixblend {
+    mix-blend-mode: difference;
+}
+
+/* ロゴ */
+.headerLogo {
+    width: 350px;
+    height: 350px;
+
+    position: absolute;
+    left: -6.5%;
+    bottom: 0;
+
+    filter: brightness(0) invert(1);
+}
+
+/* キャッチコピー */
+.catchCopy {
+    display: block;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    right: 0%;
+    bottom: 125px;
+
+    color: #fff;
+    font-size: 60px;
+
+    line-height: 6rem;
+    letter-spacing: 1rem;
+
+    writing-mode: vertical-rl;
+
+}
+
+/* ニュース */
+.newsList {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 2rem;
+    line-height: 2rem;
+    align-items: start;
+}
+
+/* index.html end */
+
+/* about.html */
+.aboutSpan {
+    display: block;
+    font-size: 1rem;
+}
+
+
+/* about.html end */
+
+/* スマートフォン用 */
+@media screen and (max-width: 1024px),
+(max-height: 600px) {
+    .headerContents {
+        width: auto;
+        height: 100svh;
+    }
+
+    .cometenBand {
+        width: 100%;
+        height: 15%;
+
+        object-fit: cover;
+        object-position: bottom;
+
+    }
+
+    .headerRelative {
+        width: 90%;
+        height: 100%;
+    }
+
+    .headerLogo {
+        width: 200px;
+        height: 200px;
+
+        bottom: 0;
+        left: -6%
+    }
+
+    .catchCopy {
+        display: block;
+        position: absolute;
+        bottom: 3%;
+        right: 0;
+
+
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .smartSlider {
+        object-fit: cover;
+        object-position: 30% bottom;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .smartSliderLeft {
+        object-fit: none;
+        object-position: 30% 0%;
+    }
+}
+
+/* スマホ横画面用 */
+@media screen and (max-height: 850px) and (orientation: landscape) {
+
+    .headerContents {
+        width: auto;
+        height: 100svh;
+    }
+
+    .headerRelative {
+        width: 75%;
+    }
+
+    .headerLogo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .catchCopy {
+        bottom: 0;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+
+
+}
+
+/* タブレット横向き */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    .headerContents {
+        width: auto;
+        height: 100svh;
+    }
+
+    .headerRelative {
+        width: 75%;
+    }
+
+    .headerLogo {
+        width: 225px;
+        height: 225px;
+    }
+
+    .catchCopy {
+        bottom: 15%;
+
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+}
+
+/* 細い画面のスマホ用(縦画面) */
+@media screen and (max-width: 480px) {
+
+    .headerContents {
+        width: auto;
+        height: 100svh;
+    }
+
+    .headerLogo {
+        width: 150px;
+        height: auto;
+    }
+
+    .headerRelative {
+        width: 90%;
+    }
+
+    .catchCopy {
+        bottom: 3%;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .smartSliderLeft {
+        object-fit: cover;
+        object-position: 35% bottom;
+    }
+
+    .navigationList li {
+        margin: 0 0.8rem;
+    }
+}
+
+/* 細い画面のスマホ用(横画面) */
+@media screen and (max-height: 480px) and (min-aspect-ratio: 2/1) {
+
+    .headerContents {
+        width: auto;
+        height: 100svh;
+    }
+
+    .headerRelative {
+        width: 75%;
+    }
+
+    .catchCopy {
+        bottom: 0;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .navigationList li {
+        margin: 0 0.8rem;
+    }
+}
