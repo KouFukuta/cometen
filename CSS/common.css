@@ -491,11 +491,15 @@ footer {
     }
 
     .navigationList li {
-        margin: 0 0.8rem;
+        margin: 0 0.75rem;
     }
 
     .headerTitle {
         font-size: 2.5rem;
+    }
+
+    .navigationList {
+        top: 35%;
     }
     
 }
@@ -529,7 +533,7 @@ footer {
     }
 
     .navigationList li {
-        margin: 0 0.8rem;
+        margin: 0 0.75rem;
     }
 }
 
@@ -542,6 +546,6 @@ footer {
     }
 
     .navigationList li {
-        margin: 0 0.8rem;
+        margin: 0 0.75rem;
     }
 }
