@@ -512,6 +512,10 @@ footer {
 
     }
 
+    .navigationList {
+        top: 30%;
+    }
+
 }
 
 /* タブレット横向き */
@@ -535,6 +539,10 @@ footer {
     .navigationList li {
         margin: 0 0.75rem;
     }
+
+    .navigationList {
+        top: 40%;
+    }
 }
 
 /* 細い画面のスマホ用(横画面) */
@@ -547,5 +555,9 @@ footer {
 
     .navigationList li {
         margin: 0 0.75rem;
+    }
+
+    .navigationList {
+        top: 40%;
     }
 }
