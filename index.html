@@ -54,7 +54,8 @@
         <!-- スライドショー -->
         <div class="headerSlider">
             <img class="slides" src="Images/DSC04075.jpg" alt="#">
-            <img class="slides smartSlider" src="Images/DSC00451.jpg" alt="#">
+            <img class="slides pcSlider" src="Images/DSC00770.jpg" alt="#">
+            <img class="slides smartSlider" src="Images/DSC00770_smartphone.jpg" alt="#">
             <img class="slides" src="Images/DSC02158.jpg" alt="#">
             <img class="slides" src="Images/DSC03972.jpg" alt="#">
             <img class="slides" src="Images/0825_3.jpg" alt="#">
@@ -202,11 +203,21 @@
 
     <script>
         // slick
-        $(function () {
+        $(document).ready(function () {
+            // 画面サイズに応じて画像を除外
+            if ($(window).width() >= 768) {
+                // PC表示（768px以上）では3枚目の画像を除外
+                $('.smartSlider').remove();
+            } else {
+                // スマホ表示（768px以下）では2枚目の画像を表示
+                $('.pcSlider').remove();
+            }
+
+            // Slickスライダーの初期化
             $('.headerSlider').slick({
                 autoplay: true,
                 speed: 2000,
-                dots: false,
+                dots: true,
                 fade: true,
             });
         });

@@ -36,6 +36,14 @@
     object-fit: cover;
 }
 
+.pcSlider {
+    display: block !important;
+}
+
+.smartSlider {
+    display: none !important;
+}
+
 /* ヘッダーコンテンツ */
 
 .headerContents {
@@ -169,17 +177,17 @@
         line-height: 3.5rem;
     }
 
-    .smartSlider {
-        object-fit: cover;
-        object-position: 30% bottom;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
-    .smartSliderLeft {
-        object-fit: none;
-        object-position: 30% 0%;
+    .smartSlider {
+        display: block !important;
+        object-fit: cover !important;
+        object-position: left center;
+    }
+
+    .pcSlider {
+        display: none;
     }
 }
 
@@ -205,8 +213,6 @@
         font-size: 2rem;
         line-height: 3rem;
     }
-
-
 
 }
 
