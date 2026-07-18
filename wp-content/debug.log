@@ -1,0 +1,11 @@
+[17-May-2026 09:50:46 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994
+[17-May-2026 09:51:17 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994
+[17-May-2026 13:54:51 UTC] Automatic updates starting...
+[17-May-2026 13:54:53 UTC] Automatic updates complete.
+[18-May-2026 01:56:35 UTC] Automatic updates starting...
+[18-May-2026 01:56:36 UTC] Automatic updates complete.
+[21-May-2026 13:00:54 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994
+[04-Jul-2026 01:49:23 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994
+[18-Jul-2026 09:22:12 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994
+[18-Jul-2026 09:22:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994
+[18-Jul-2026 09:22:18 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/kou_fkt/Local Sites/cometenwp/app/public/wp-includes/class-wpdb.php on line 1994

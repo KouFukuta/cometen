@@ -1,0 +1,46 @@
+// variables — 色・フォントの変数定義
+
+$primary-color: #231815;
+$hover-color: #696969;
+
+$font-serif-en: "garamond-premier-pro";
+$font-serif-ja: "a-otf-ud-reimin-pr6n";
+
+
+// html, body, 見出し, リンク
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: $primary-color;
+  font-family: $font-serif-en, $font-serif-ja, serif;
+  font-weight: 400;
+  font-size: 1rem;
+  // 欧文(Garamond)の x-height を和文(UD黎ミン)に近づけて大きさを揃える
+  font-size-adjust: 0.49;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif-en, $font-serif-ja, serif;
+  font-weight: 700;
+  font-size-adjust: 0.49;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.57em; }
+h3 { font-size: 1.3em; }
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+p, li {
+  line-height: 2.5;
+}

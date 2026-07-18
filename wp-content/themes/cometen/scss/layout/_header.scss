@@ -1,0 +1,54 @@
+// ヘッダーのスタイル
+@use '../base/variables' as *;
+
+header {
+    width: 100%;
+    height: 30%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    pointer-events: none; // ヘッダー領域でクリックを吸わないようにする
+
+    @media (max-width: 768px) {
+        height: 30%;
+    }
+}
+
+.header_accessory_clip {
+    width: 100%;
+    height: 144px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header_accessory {
+    width: 100%;
+    height: 144px; // clip(画面高さ基準)に合わせる
+    object-fit: cover; // 比率維持。極端に縦長になった場合のみ左右がクロップされる
+    object-position: center bottom; // SVGの下端をimgボックスの下端に揃える
+    position: absolute;
+    bottom: 0; // imgボックス自体もclipの下端に固定
+    left: 0;
+    filter: brightness(0) invert(1); // デフォルトは白
+    transition: filter 0.3s ease;
+}
+
+body:not(.home) .header_accessory {
+    filter: invert(1);
+}
+
+
+// mainまでスクロールしたらheader_accesoryの色が変更される
+header.scrolled {
+    .header_accessory {
+        filter: brightness(0);
+    }
+}
+
+.header_inner {
+    width: 100%;
+    position: relative;
+}

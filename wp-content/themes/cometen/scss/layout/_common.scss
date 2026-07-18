@@ -1,0 +1,34 @@
+// 全ページ共通レイアウト
+
+body {
+    opacity: 0;
+    transition: opacity .6s ease;
+}
+
+body.is-loaded {
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        opacity: 1;
+        transition: none;
+    }
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main > section,
+main > article {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 48px 0;
+
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}

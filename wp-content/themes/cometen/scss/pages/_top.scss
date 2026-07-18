@@ -1,0 +1,213 @@
+@use '../base/variables' as *;
+
+// トップページに共通するもの
+
+main > section h2 {
+    text-align: center;
+    margin: 24px 0 32px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 1s ease, transform 1s ease;
+    will-change: opacity, transform;
+
+    &.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.description_text--ja,
+.description_text--en {
+    margin-bottom: 24px;
+
+}
+
+.shopinfo {
+    display: block;
+    text-align: center;
+    line-height: 2;
+
+    &_businessday,
+    &_closeday {
+        display: block;
+        text-align: center;
+        font-size: 1.57rem;
+    }
+
+    &_content > ul {
+        list-style-position: inside;
+        text-align: center;
+    }
+
+    &_address {
+        display: block;
+    }
+}
+
+// hero
+// トップページのスライドショーとキャッチコピー、ロゴ部分に適用
+.hero {
+    width: 100%;
+    height: 100svh;
+    position: relative;
+}
+
+// スライドショー
+.hero_slide {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+// ロゴ、キャッチコピー部分
+.hero_content{
+    width: 75%;
+    height:  320px;
+
+    z-index: 100;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        height: 240px;
+    }
+}
+
+.hero_logo {
+    width: 200px;
+    height: 200px;
+    align-self: flex-end;
+    img{
+        width: 100%;
+        filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+        width: 144px;
+        height: 144px;
+    }
+}
+
+.hero_catchcopy {
+    writing-mode: vertical-rl;
+    color: #fff;
+    letter-spacing: 1em;
+    margin-bottom: 48px;
+
+    h1 {
+        font-weight: 900;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 0.85rem;
+        letter-spacing: 0.7em;
+        margin-bottom: 32px;
+    }
+}
+
+// ニュース
+.news_content {
+    display:flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.news_item {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    dt {
+        flex-shrink: 0;
+        width: 10rem;
+        white-space: nowrap;
+
+        @media (max-width: 768px) {
+            width: auto;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    }
+
+    dd {
+        margin: 0;
+
+        a {
+            position: relative;
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                width: 100%;
+                height: 1px;
+                background: currentColor;
+                transform: scaleX(0);
+                transform-origin: right center;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                color: $hover-color;
+
+                &::after {
+                    transform: scaleX(1);
+                    transform-origin: left center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
