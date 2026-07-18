@@ -1,0 +1,10 @@
+{
+    "name": "cometen_prod",
+    "host": "sv16314.xserver.jp",
+    "port": 21,
+    "username": "cometen",
+    "protocol": "ftp",
+    "password": "f0n54sj5",
+    "remotePath": "cometen.jp/public_html",
+    "uploadOnSave": false
+}

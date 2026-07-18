@@ -1,0 +1,29 @@
+.fixed_page_title {
+    width: 100%;
+    height: 320px;
+}
+
+.fixed_page_title > h1 {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.fixed_content {
+    text-align: center; // a タグなどに適用
+    padding-bottom: 48px;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    ul {
+        width: fit-content;
+        margin: 0 auto;   // ul ブロックを中央寄せ
+        text-align: left; // ポッチとテキストは左揃え
+    }
+}
+
+.fixed_content > ul {
+    display: inline-block;
+    text-align: left;
+}

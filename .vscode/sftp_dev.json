@@ -1,0 +1,10 @@
+{
+    "name": "ofuku_dev",
+    "host": "s325.xrea.com",
+    "port": 21,
+    "username": "ofuku2350dev",
+    "protocol": "ftp",
+    "password": "ZPcsMFL9b7K7",
+    "remotePath": "/public_html/ofuku2350-dev.xrea.jp",
+    "uploadOnSave": false
+}
