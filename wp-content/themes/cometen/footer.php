@@ -14,10 +14,12 @@
                     <a href="https://cometen.stores.jp/">ONLINE SHOP</a>
                 </div>
             </div>
+            
         </div>
 
         <div class="footer_copyright">
             <p>@cometen 2026</p>
+
         </div>
     </footer>
 
